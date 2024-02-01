@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<table border="2" width="100%">
+		<tr>
+			<td>Employee ID</td>
+			<td>Employee Name</td>
+			<td>Department</td>
+			<td>City</td>
+			<td>Contact</td>
+		</tr>
+		<% results.forEach(function(entry) {%>
+		<tr>
+			<td><%=entry.empId%></td>
+			<td><%=entry.name%></td>
+			<td><%=entry.department%></td>
+			<td><%=entry.city%></td>
+			<td><%=entry.contact%></td>
+		</tr>
+		<%});%>
+	</table>
+
+</body>
+</html>

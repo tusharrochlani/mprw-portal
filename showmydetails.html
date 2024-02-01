@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find User Details</title>
+    <link rel="stylesheet" type="text/css" href="datafind.css">
+    <style type="text/css">
+        /* Your existing CSS styles */
+
+    </style>
+</head>
+<body>
+    <div class="find-details">
+        <h1>Your Details</h1>
+        </form>
+
+        <% if (results && results.length > 0) { %>
+            <p>Full Name: <%= results[0].name %></p>
+            <p>Department: <%= results[0].department %></p>
+            <p>City: <%= results[0].city %></p>
+            <p>Contact: <%= results[0].contact %></p>
+        <% } else { %>
+            <p>No details found for the provided User Id.</p>
+        <% } %>
+    </div>
+</body>
+</html>
