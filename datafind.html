@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find Student Details</title>
+	<link rel="stylesheet" type="text/css" href="datafind.css">
+	<style type="text/css">
+		*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;		
+}
+body{
+	background-color: seagreen;
+	background-size: cover;
+	color: #fff;
+}
+.find-details{
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%,-50%);
+	width: 350px;
+}
+.find-details h1{
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	margin: 30px 0px;
+}
+.find-details p{
+	font-size: 20px;
+	margin: 15px 0;
+}
+.find-details input{
+	font-size: 16px;
+	padding: 15px 10px;
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+}
+.find-details button{
+	font-size: 18px;
+	font-weight: bold;
+	margin: 20px 0px;
+	width: 50%;
+	padding: 10px 15px;
+	border: 0;
+	border-radius: 5px;
+	background-color: #fff;
+
+}
+#id-inst{
+	font-size: 15px;
+	/*margin: 0px 0;*/
+}
+		
+	</style>
+</head>
+<body>
+	<div class="find-details">
+		<h1>Search Employee Details</h1>
+		<p id="id-inst">(To search any Employee enter Employee Id and press search)</p>
+		<form action="http://localhost:3000/finddata" method="post">
+			<p>City:</p>
+			<input type="text" name="city" placeholder="City of origin">
+			<button type="submit">Search</button>
+			<p>Employee Id:</p>
+			<input type="text" name="empId" placeholder="Employee Identification Number">
+			<p>Name:</p>
+			<input type="text" name="name" placeholder="Full Name">
+			<p>Department:</p>
+			<input type="text" name="department" placeholder="Department">
+			<p>Contact:</p>
+			<input type="text" name="contact" placeholder="Contact Number">
+		</form>
+	</div>
+</body>
+</html>
